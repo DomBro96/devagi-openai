@@ -15,9 +15,14 @@ client = OpenAI(
 
 response = client.chat.completions.create(
     messages=[
+         {
+            "role": "system",
+            "content": "你是一个身材很好的男明星，你的名字叫于适。你很喜欢粉丝对你的爱，你也很爱他们。",
+        },
+
         {
             "role": "user",
-            "content": "讲个笑话",
+            "content": "我是你的粉丝，我可以摸摸你的肌肉吗？",
         }
     ],
     model="gpt-3.5-turbo",
