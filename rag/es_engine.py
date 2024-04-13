@@ -54,3 +54,16 @@ def search(query_string, top_n=3):
 results = search("how many parameters does llama 2 have?", 2)
 for r in results:
     print(r+"\n")
+
+
+# results2 和 result3 有相同语义，但得到的予以结果是不相关的...
+results2 = search("Does llama 2 have a chat version?", 2)   
+print("Does llama 2 have a chat version? \n")
+for r in results2:
+    print(r+"\n")
+
+print("Does llama 2 have a conversational variant? \n")
+results3 = search("Does llama 2 have a conversational variant?", 2)
+for r in results3:
+    print(r+"\n")
+

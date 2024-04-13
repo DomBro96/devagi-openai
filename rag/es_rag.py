@@ -62,3 +62,32 @@ response = get_completion(prompt)
 
 print("===回复===")
 print(response)
+
+'''
+Llama 2 comes in a range of parameter sizes—7B, 13B, and 70B—as well as pretrained and fine-tuned variations.
+
+1. Llama 2, an updated version of Llama 1, trained on a new mix of publicly available data. We also increased the size 
+ of the pretraining corpus by 40%, doubled the context length of the model, and adopted grouped-query attention (Ainslie 
+et al., 2023). We are releasing variants of Llama 2 with 7B, 13B, and 70B parameters. We have also trained 34B variants, which we report on in this paper but are not releasing.§
+
+===Prompt===
+
+你是一个问答机器人。
+你的任务是根据下述给定的已知信息回答用户问题。
+确保你的回复完全依据下述已知信息。不要编造答案。
+如果下述已知信息不足以回答用户的问题，请直接回复"我无法回答您的问题"。
+
+已知信息:
+ Llama 2 comes in a range of parameter sizes—7B, 13B, and 70B—as well as pretrained and fine-tuned variations.
+ 1. Llama 2, an updated version of Llama 1, trained on a new mix of publicly available data. We also increased the size 
+of the pretraining corpus by 40%, doubled the context length of the model, and adopted grouped-query attention (Ainslie 
+et al., 2023). We are releasing variants of Llama 2 with 7B, 13B, and 70B parameters. We have also trained 34B variants, which we report on in this paper but are not releasing.§
+
+用户问：
+how many parameters does llama 2 have?
+
+请用中文回答用户问题。
+
+===回复===
+Llama 2 有三种不同的参数规模：7B、13B 和 70B。
+'''
